@@ -1,0 +1,60 @@
+.heading-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.heading-container h2{
+    color: #68bddd;
+}
+
+.scorecards-container {
+    width: 90%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+@media only screen and (min-width: 400px) {
+    .scorecards-container {
+        grid-template-columns: 1fr 1fr;
+    }  
+}
+
+@media only screen and (min-width: 850px) {
+    .scorecards-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.card {
+    background: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+.card article {
+    padding: 25px;
+}
+   
+.card h1 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #68b;
+    margin: 0;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+   
+.card span {
+    font-size: 17px;
+    color: #999;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+}
